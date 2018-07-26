@@ -1,8 +1,26 @@
 h1 {
     margin: 20px;
     padding: 10px;
+    font-weight: bold;
+    color: blue;
 }
 
 img {
     margin: 30px;
 }
+
+@-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotateY(0deg);
+    }
+    to { 
+      -webkit-transform: rotateY(360deg);
+    }
+  }
+  
+  img:hover {
+      -webkit-animation-name:            rotate; 
+      -webkit-animation-duration:        10s; 
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+  }
